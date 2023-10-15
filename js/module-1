@@ -21,3 +21,57 @@
 // const login = "mango935";
 // const isOnline = true;
 // const isAdmin = false;
+
+
+
+// 
+
+
+// const apartment = {
+//     imgUrl: "https://via.placeholder.com/640x480",
+//     descr: "Spacious apartment in the city center",
+//     rating: 4,
+//     price: 2153,
+//     tags: ["premium", "promoted", "top"],
+//     owner: {
+//       name: "Henry",
+//       phone: "982-126-1588",
+//       email: "henry.carter@aptmail.com",
+//     },
+    
+//   apartment.price = 5000;
+//     apartment.rating = 4.7;
+//   apartment.owner.name = "Henry Sibola";
+//   apartment.tags = tags.concat("trusted");
+//   };
+
+
+const pizzaPalace = {
+  pizzas: ["Ultracheese", "Smoked", "Four meats"],
+  order(pizzaName, onSuccess, onError) {
+    if (!this.pizzas.includes(pizzaName)) {
+      if (!this.pizzas.includes(pizzaName)) {
+      onError(`There is no pizza with a name ${pizzaName} in the assortment.`)
+    } else {
+      onSuccess(`Your order is accepted. Cooking pizza ${pizzaName}.`)
+    }
+  }
+}
+}
+// Change code above this line
+
+// Callback for onSuccess
+function makePizza(pizzaName) {
+  return `Your order is accepted. Cooking pizza ${pizzaName}.`;
+}
+
+// Callback for onError
+function onOrderError(error) {
+  return `Error! ${error}`;
+}
+
+// Method calls with callbacks
+pizzaPalace.order("Smoked", makePizza, onOrderError);
+pizzaPalace.order("Four meats", makePizza, onOrderError);
+pizzaPalace.order("Big Mike", makePizza, onOrderError);
+pizzaPalace.order("Vienna", makePizza, onOrderError);
