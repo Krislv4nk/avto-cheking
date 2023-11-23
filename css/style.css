@@ -1,12 +1,13 @@
 
+
 .product-card {
   width: 335px;
 height: 98px;
-border-radius: 10px;
-background: #dfbdbd;
+border-radius:#FAFAFA;
 display: flex;
 padding: 12px;
 gap: 10px;
+background: #FAFAFA;;
 }
 
 .product-icon{
@@ -15,14 +16,29 @@ height: 74px;
 border-radius: 10px;
 background: #E8E8E2;
 }
+.popular-name {
+  color: var(--color-text);
+  font-size: 18px;
+  line-height: 1.11em;
+  margin-bottom: 12px;
+}
+.popular-text {
+  color: rgba(1, 1, 1, 0.30);
+  font-size: 12px;
+  line-height: 1.16em;
+  margin-bottom: 9px;
+}
+.row {
+  gap: 9px;
+  display: flex;
+  justify-content: space-between;
+}
 .add-to-bascket {
   width: 10px;
 height: 10px;
 margin-left: auto;
-cursor: pointer;
-background-color: aqua;
-
 }
+
 
 
 
