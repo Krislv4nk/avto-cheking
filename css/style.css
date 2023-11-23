@@ -1,4 +1,37 @@
-.backdrop {
+
+.product-card {
+  width: 335px;
+height: 98px;
+border-radius: 10px;
+background: #dfbdbd;
+display: flex;
+padding: 12px;
+gap: 10px;
+}
+
+.product-icon{
+  width: 74px;
+height: 74px;
+border-radius: 10px;
+background: #E8E8E2;
+}
+.add-to-bascket {
+  width: 10px;
+height: 10px;
+margin-left: auto;
+cursor: pointer;
+background-color: aqua;
+
+}
+
+
+
+
+
+
+
+
+/* .backdrop {
     display: flex;
   justify-content: center;
   align-items: center;
@@ -175,4 +208,4 @@ padding: 26px 40px;
     }
 
     
- }
+ } */
